@@ -1,0 +1,1193 @@
+Script started on Thu 01 Nov 2018 11:12:34 AM UTC
+[root@otuslinux vagrant]# clear
+[H[J[root@otuslinux vagrant]# yum install -y xfsdump
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos.mirror.iphh.net
+ * extras: pkg.adfinis-sygroup.ch
+ * updates: centos.schlundtech.de
+Resolving Dependencies
+--> Running transaction check
+---> Package xfsdump.x86_64 0:3.1.7-1.el7 will be installed
+--> Processing Dependency: attr >= 2.0.0 for package: xfsdump-3.1.7-1.el7.x86_64
+--> Running transaction check
+---> Package attr.x86_64 0:2.4.46-13.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================================================================================
+ Package                                Arch                                  Version                                        Repository                           Size
+=======================================================================================================================================================================
+Installing:
+ xfsdump                                x86_64                                3.1.7-1.el7                                    base                                308 k
+Installing for dependencies:
+ attr                                   x86_64                                2.4.46-13.el7                                  base                                 66 k
+
+Transaction Summary
+=======================================================================================================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 374 k
+Installed size: 1.1 M
+Downloading packages:
+(2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                 0% [                                                           ]  0.0 B/s |    0 B  --:--:-- ETA (2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                 9% [=====                                                      ]  0.0 B/s |  34 kB  --:--:-- ETA (1/2): attr-2.4.46-13.el7.x86_64.rpm                                                                                                            |  66 kB  00:00:01     
+(2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                56% [=================================                          ] 218 kB/s | 212 kB  00:00:00 ETA (2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                95% [========================================================   ] 219 kB/s | 357 kB  00:00:00 ETA (2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                96% [=========================================================  ] 204 kB/s | 362 kB  00:00:00 ETA (2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                97% [=========================================================- ] 190 kB/s | 366 kB  00:00:00 ETA (2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                98% [========================================================== ] 177 kB/s | 370 kB  00:00:00 ETA (2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                                                                                           | 308 kB  00:00:03     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                                  102 kB/s | 374 kB  00:00:03     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : attr-2.4.46-13.el7.x86_64 [                                                                                                                       ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#######                                                                                                                ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#####################                                                                                                  ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [################################                                                                                       ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###################################                                                                                    ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###############################################                                                                        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#################################################                                                                      ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###################################################                                                                    ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###########################################################                                                            ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###############################################################                                                        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [##########################################################################                                             ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [############################################################################                                           ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#############################################################################                                          ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###############################################################################                                        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [####################################################################################                                   ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [########################################################################################                               ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###########################################################################################                            ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [################################################################################################                       ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###################################################################################################                    ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#######################################################################################################                ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [############################################################################################################           ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###############################################################################################################        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [##################################################################################################################     ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###################################################################################################################    ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [####################################################################################################################   ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#####################################################################################################################  ] 1/2  Installing : attr-2.4.46-13.el7.x86_64                                                                                                                           1/2 
+  Installing : xfsdump-3.1.7-1.el7.x86_64 [                                                                                                                      ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#######                                                                                                               ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###############                                                                                                       ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#######################                                                                                               ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [##############################                                                                                        ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################                                                                                   ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###########################################                                                                           ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################################                                                                   ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###########################################################                                                           ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################################################                                                   ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###########################################################################                                           ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [##################################################################################                                    ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#######################################################################################                               ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [##########################################################################################                            ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#############################################################################################                         ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [##############################################################################################                        ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#####################################################################################################                 ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#########################################################################################################             ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [################################################################################################################      ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [##################################################################################################################    ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################################################################################################   ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [####################################################################################################################  ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64                                                                                                                          2/2 
+  Verifying  : attr-2.4.46-13.el7.x86_64                                                                                                                           1/2 
+  Verifying  : xfsdump-3.1.7-1.el7.x86_64                                                                                                                          2/2 
+
+Installed:
+  xfsdump.x86_64 0:3.1.7-1.el7                                                                                                                                         
+
+Dependency Installed:
+  attr.x86_64 0:2.4.46-13.el7                                                                                                                                          
+
+Complete!
+[root@otuslinux vagrant]# pvcreate /dev/sdb
+  Physical volume "/dev/sdb" successfully created.
+[root@otuslinux vagrant]# vgcreate vg_root /dev/sdb
+  Volume group "vg_root" successfully created
+[root@otuslinux vagrant]# lvcreate -n lv_root -l +100FRE[K[K[K%FREE /dev/vg_root
+  Logical volume "lv_root" created.
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk 
+├─sda1                    8:1    0    1M  0 part 
+├─sda2                    8:2    0    1G  0 part /boot
+└─sda3                    8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  └─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk 
+└─vg_root-lv_root       253:2    0   10G  0 lvm  
+sdc                       8:32   0    2G  0 disk 
+sdd                       8:48   0    1G  0 disk 
+sde                       8:64   0    1G  0 disk 
+sdf                       8:80   0   10G  0 disk 
+sdg                       8:96   0    5G  0 disk 
+sdh                       8:112  0    5G  0 disk 
+[root@otuslinux vagrant]# mkfs.xfs /dev/vg_root/lv_root 
+meta-data=/dev/vg_root/lv_root   isize=512    agcount=4, agsize=655104 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=2620416, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+[root@otuslinux vagrant]# mount /dev/vg_root/lv_root /mnt
+[root@otuslinux vagrant]# xfsdump -J - /dev/VolGroup00/LogVol00 | xfsrestore -J - /mnt
+xfsdump: using file dump (drive_simple) strategy
+xfsdump: version 3.1.7 (dump format 3.0)
+xfsrestore: using file dump (drive_simple) strategy
+xfsrestore: version 3.1.7 (dump format 3.0)
+xfsdump: level 0 dump of otuslinux:/
+xfsdump: dump date: Thu Nov  1 11:15:28 2018
+xfsdump: session id: 6d6baebd-521f-4977-a44b-cf942caa9c6f
+xfsdump: session label: ""
+xfsdump: ino map phase 1: constructing initial dump list
+xfsrestore: searching media for dump
+xfsdump: ino map phase 2: skipping (no pruning necessary)
+xfsdump: ino map phase 3: skipping (only one dump stream)
+xfsdump: ino map construction complete
+xfsdump: estimated dump size: 824470528 bytes
+xfsdump: creating dump session media file 0 (media 0, file 0)
+xfsdump: dumping ino map
+xfsdump: dumping directories
+xfsrestore: examining media file 0
+xfsrestore: dump description: 
+xfsrestore: hostname: otuslinux
+xfsrestore: mount point: /
+xfsrestore: volume: /dev/mapper/VolGroup00-LogVol00
+xfsrestore: session time: Thu Nov  1 11:15:28 2018
+xfsrestore: level: 0
+xfsrestore: session label: ""
+xfsrestore: media label: ""
+xfsrestore: file system id: b60e9498-0baa-4d9f-90aa-069048217fee
+xfsrestore: session id: 6d6baebd-521f-4977-a44b-cf942caa9c6f
+xfsrestore: media id: b32ebfc5-1061-4dfa-98bc-ffde57051227
+xfsrestore: searching media for directory dump
+xfsrestore: reading directories
+xfsdump: dumping non-directory files
+xfsrestore: 3164 directories and 28173 entries processed
+xfsrestore: directory post-processing
+Script started on Thu 01 Nov 2018 11:23:52 AM UTC
+[root@otuslinux vagrant]# exitcat /boot/grub2/grub.cfg[1Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[Kls -l
+total 20
+-rw-r--r--. 1 root root 17259 Nov  1 11:24 script.log
+[root@otuslinux vagrant]# clear
+[H[J[root@otuslinux vagrant]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk 
+├─sda1                    8:1    0    1M  0 part 
+├─sda2                    8:2    0    1G  0 part /boot
+└─sda3                    8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+  └─VolGroup00-LogVol00 253:2    0 37.5G  0 lvm  
+sdb                       8:16   0   10G  0 disk 
+└─vg_root-lv_root       253:0    0   10G  0 lvm  /
+sdc                       8:32   0    2G  0 disk 
+sdd                       8:48   0    1G  0 disk 
+sde                       8:64   0    1G  0 disk 
+sdf                       8:80   0   10G  0 disk 
+sdg                       8:96   0    5G  0 disk 
+sdh                       8:112  0    5G  0 disk 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# lvremove .[K/dev/VolGroup00/LogVol0
+  Failed to find logical volume "VolGroup00/LogVol0"
+[root@otuslinux vagrant]# lvremove /dev/VolGroup00/LogVol00
+Do you really want to remove active logical volume VolGroup00/LogVol00? [y/n]: y
+  Logical volume "LogVol00" successfully removed
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# lvcreate -n VolGroup00/LogVol00 -L 8G /dev/VolGroup00
+WARNING: xfs signature detected on /dev/VolGroup00/LogVol00 at offset 0. Wipe it? [y/n]: y
+  Wiping xfs signature on /dev/VolGroup00/LogVol00.
+  Logical volume "LogVol00" created.
+[root@otuslinux vagrant]# mf[Kkfs.xfs /dev/VolGroup00/LogVol00
+meta-data=/dev/VolGroup00/LogVol00 isize=512    agcount=4, agsize=524288 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=2097152, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+[root@otuslinux vagrant]# mount /dev/VolGroup00/LogVol00 /mnt
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# xfsdump -J - /devvg_[K[K[K/vg_root/lv_root  | xfsrestore -J - /mnt
+xfsrestore: using file dump (drive_simple) strategy
+xfsrestore: version 3.1.7 (dump format 3.0)
+xfsdump: using file dump (drive_simple) strategy
+xfsdump: version 3.1.7 (dump format 3.0)
+xfsdump: level 0 dump of otuslinux:/
+xfsdump: dump date: Thu Nov  1 11:26:52 2018
+xfsdump: session id: 3d214e80-889a-4210-9896-f19788913e0c
+xfsdump: session label: ""
+xfsrestore: searching media for dump
+xfsdump: ino map phase 1: constructing initial dump list
+xfsdump: ino map phase 2: skipping (no pruning necessary)
+xfsdump: ino map phase 3: skipping (only one dump stream)
+Script started on Thu 01 Nov 2018 11:44:06 AM UTC
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# lvremove /dev/vg_root/lv_root 
+Do you really want to remove active logical volume vg_root/lv_root? [y/n]: y
+  Logical volume "lv_root" successfully removed
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# vgremove /dev/vg_root
+  Volume group "vg_root" successfully removed
+[root@otuslinux vagrant]# pvrem[Kmove /dev/sdb
+  Labels on physical volume "/dev/sdb" successfully wiped.
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# lsblk
+NAME                     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                        8:0    0   40G  0 disk 
+├─sda1                     8:1    0    1M  0 part 
+├─sda2                     8:2    0    1G  0 part /boot
+└─sda3                     8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00  253:0    0    8G  0 lvm  /
+  └─VolGroup00-LogVol01  253:1    0  1.5G  0 lvm  [SWAP]
+sdb                        8:16   0   10G  0 disk 
+sdc                        8:32   0    2G  0 disk 
+├─vg_var-lv_var_rmeta_0  253:3    0    4M  0 lvm  
+│ └─vg_var-lv_var        253:7    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_0 253:4    0  952M  0 lvm  
+  └─vg_var-lv_var        253:7    0  952M  0 lvm  /var
+sdd                        8:48   0    1G  0 disk 
+├─vg_var-lv_var_rmeta_1  253:5    0    4M  0 lvm  
+│ └─vg_var-lv_var        253:7    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_1 253:6    0  952M  0 lvm  
+  └─vg_var-lv_var        253:7    0  952M  0 lvm  /var
+sde                        8:64   0    1G  0 disk 
+sdf                        8:80   0   10G  0 disk 
+sdg                        8:96   0    5G  0 disk 
+sdh                        8:112  0    5G  0 disk 
+[root@otuslinux vagrant]# clear
+[H[J[root@otuslinux vagrant]# pvdisplay
+  --- Physical volume ---
+  PV Name               /dev/sda3
+  VG Name               VolGroup00
+  PV Size               <39.00 GiB / not usable 30.00 MiB
+  Allocatable           yes 
+  PE Size               32.00 MiB
+  Total PE              1247
+  Free PE               943
+  Allocated PE          304
+  PV UUID               vrrtbx-g480-HcJI-5wLn-4aOf-Olld-rC03AY
+   
+  --- Physical volume ---
+  PV Name               /dev/sdc
+  VG Name               vg_var
+  PV Size               2.00 GiB / not usable 4.00 MiB
+  Allocatable           yes 
+  PE Size               4.00 MiB
+  Total PE              511
+  Free PE               272
+  Allocated PE          239
+  PV UUID               jZf9PS-rL8M-UstE-PGhv-sJW3-gMgB-rus4bL
+   
+  --- Physical volume ---
+  PV Name               /dev/sdd
+  VG Name               vg_var
+  PV Size               1.00 GiB / not usable 4.00 MiB
+  Allocatable           yes 
+  PE Size               4.00 MiB
+  Total PE              255
+  Free PE               16
+  Allocated PE          239
+  PV UUID               B1FAxk-lC1M-dhMO-K3r2-UQdt-GkWG-0vhrhP
+   
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# lvcreate -n LogVol_Home -L 2G /dev/VolGroup00/[K
+  Logical volume "LogVol_Home" created.
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# mkfs.xfs /dev/VolGroup00/LogVol_Home 
+meta-data=/dev/VolGroup00/LogVol_Home isize=512    agcount=4, agsize=131072 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=524288, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+[root@otuslinux vagrant]# 
+[root@otuslinux vagrant]# mount /dev/VolGroup00/LogVol_Home  /mnt/
+[root@otuslinux vagrant]# cp -aR /home/* /mnt/
+Script started on Thu 01 Nov 2018 12:08:55 PM UTC
+[root@otuslinux /]# rm -rf[K[K[K[K[K[Kcd /mnt
+[root@otuslinux mnt]# ls 
+[root@otuslinux mnt]# cd ..
+[root@otuslinux /]# cat /ets/fstab
+cat: /ets/fstab: No such file or directory
+[root@otuslinux /]# cat /ets/fstab[1P/fstabc/fstab
+
+#
+# /etc/fstab
+# Created by anaconda on Sat May 12 18:50:26 2018
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/VolGroup00-LogVol00 /                       xfs     defaults        0 0
+UUID=570897ca-e759-4c81-90cf-389da6eee4cc /boot                   xfs     defaults        0 0
+/dev/mapper/VolGroup00-LogVol01 swap                    swap    defaults        0 0
+UUID="83b6efec-0d7c-42ae-a432-cbd8a278f4bb" /var ext4 defaults 0 0
+UUID="3f16b410-6b6a-4fb9-adac-65c6a85d41f7" /home xfs defaults 0 0
+[root@otuslinux /]# clear
+[H[J[root@otuslinux /]# touch[K[K[K[K[Kls -l
+total 24
+lrwxrwxrwx.   1 root    root       7 Nov  1 11:26 [0m[01;36mbin[0m -> [01;34musr/bin[0m
+dr-xr-xr-x.   5 root    root    4096 Nov  1 11:54 [01;34mboot[0m
+drwxr-xr-x.  19 root    root    3180 Nov  1 12:04 [01;34mdev[0m
+drwxr-xr-x.  77 root    root    8192 Nov  1 11:54 [01;34metc[0m
+drwxr-xr-x.   3 root    root     292 Nov  1 11:48 [01;34mhome[0m
+lrwxrwxrwx.   1 root    root       7 Nov  1 11:26 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx.   1 root    root       9 Nov  1 11:26 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxr-xr-x.   2 root    root       6 Apr 11  2018 [01;34mmedia[0m
+drwxr-xr-x.   2 root    root       6 Apr 11  2018 [01;34mmnt[0m
+drwxr-xr-x.   2 root    root       6 Apr 11  2018 [01;34mopt[0m
+dr-xr-xr-x. 184 root    root       0 Nov  1 12:04 [01;34mproc[0m
+dr-xr-x---.   3 root    root     170 Nov  1 11:22 [01;34mroot[0m
+drwxr-xr-x.  23 root    root     640 Nov  1 12:07 [01;34mrun[0m
+lrwxrwxrwx.   1 root    root       8 Nov  1 11:26 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x.   2 root    root       6 Apr 11  2018 [01;34msrv[0m
+dr-xr-xr-x.  13 root    root       0 Nov  1 12:04 [01;34msys[0m
+drwxrwxrwt.   9 root    root    4096 Nov  1 12:07 [30;42mtmp[0m
+drwxr-xr-x.  13 root    root     155 May 12 18:50 [01;34musr[0m
+drwxr-xr-x.   2 vagrant vagrant   25 Oct 31 11:22 [01;34mvagrant[0m
+drwxr-xr-x.  19 root    root    4096 Nov  1 11:42 [01;34mvar[0m
+[root@otuslinux /]# cd /home
+[root@otuslinux home]# ls -l
+total 0
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file1
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file10
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file11
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file12
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file13
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file14
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file15
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file16
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file17
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file18
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file19
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file2
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file20
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file3
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file4
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file5
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file6
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file7
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file8
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file9
+drwx------. 3 vagrant vagrant 113 Nov  1 12:02 [0m[01;34mvagrant[0m
+[root@otuslinux home]# lvcreate[K[K[K[K[K[K[K[Klvdisplay
+  --- Logical volume ---
+  LV Path                /dev/VolGroup00/LogVol01
+  LV Name                LogVol01
+  VG Name                VolGroup00
+  LV UUID                IAjIC6-ScnM-tvH6-7BTy-TN31-hd82-bgDSzd
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2018-05-12 18:50:25 +0000
+  LV Status              available
+  # open                 2
+  LV Size                1.50 GiB
+  Current LE             48
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:1
+   
+  --- Logical volume ---
+  LV Path                /dev/VolGroup00/LogVol00
+  LV Name                LogVol00
+  VG Name                VolGroup00
+  LV UUID                vFctej-6bKF-dRwZ-tgId-ZOYP-SM5e-CGluRg
+  LV Write Access        read/write
+  LV Creation host, time otuslinux, 2018-11-01 11:25:38 +0000
+  LV Status              available
+  # open                 1
+  LV Size                8.00 GiB
+  Current LE             256
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:0
+   
+  --- Logical volume ---
+  LV Path                /dev/VolGroup00/LogVol_Home
+  LV Name                LogVol_Home
+  VG Name                VolGroup00
+  LV UUID                eicf2s-8QU3-UYfh-XV9d-3f9w-l6ae-YVAdfX
+  LV Write Access        read/write
+  LV Creation host, time otuslinux, 2018-11-01 11:46:17 +0000
+  LV Status              available
+  # open                 1
+  LV Size                2.00 GiB
+  Current LE             64
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:7
+   
+  --- Logical volume ---
+  LV Path                /dev/vg_var/lv_var
+  LV Name                lv_var
+  VG Name                vg_var
+  LV UUID                2PyuAu-7eSz-bA2f-Szou-l2Xv-UybZ-3HLVqV
+  LV Write Access        read/write
+  LV Creation host, time otuslinux, 2018-11-01 11:31:25 +0000
+  LV Status              available
+  # open                 1
+  LV Size                952.00 MiB
+  Current LE             238
+  Mirrored volumes       2
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:6
+   
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# lvcreate -L 100MB -s -n home_snap /dev/VolGroup00/home_snap[K[K[K[K[K[K[K[K[KLogVol_Home
+  Rounding up size to full physical extent 128.00 MiB
+  Logical volume "home_snap" created.
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# 
+[root@otuslinux home]# lsblk
+NAME                            MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                               8:0    0   40G  0 disk 
+├─sda1                            8:1    0    1M  0 part 
+├─sda2                            8:2    0    1G  0 part /boot
+└─sda3                            8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00         253:0    0    8G  0 lvm  /
+  ├─VolGroup00-LogVol01         253:1    0  1.5G  0 lvm  [SWAP]
+  ├─VolGroup00-LogVol_Home-real 253:8    0    2G  0 lvm  
+  │ ├─VolGroup00-LogVol_Home    253:7    0    2G  0 lvm  /home
+  │ └─VolGroup00-home_snap      253:10   0    2G  0 lvm  
+  └─VolGroup00-home_snap-cow    253:9    0  128M  0 lvm  
+    └─VolGroup00-home_snap      253:10   0    2G  0 lvm  
+sdb                               8:16   0   10G  0 disk 
+sdc                               8:32   0    2G  0 disk 
+├─vg_var-lv_var_rmeta_0         253:2    0    4M  0 lvm  
+│ └─vg_var-lv_var               253:6    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_0        253:3    0  952M  0 lvm  
+  └─vg_var-lv_var               253:6    0  952M  0 lvm  /var
+sdd                               8:48   0    1G  0 disk 
+├─vg_var-lv_var_rmeta_1         253:4    0    4M  0 lvm  
+│ └─vg_var-lv_var               253:6    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_1        253:5    0  952M  0 lvm  
+  └─vg_var-lv_var               253:6    0  952M  0 lvm  /var
+sde                               8:64   0    1G  0 disk 
+sdf                               8:80   0   10G  0 disk 
+sdg                               8:96   0    5G  0 disk 
+sdh                               8:112  0    5G  0 disk 
+[root@otuslinux home]# rm -f /home/file{5..20}
+[root@otuslinux home]# ls -l
+total 0
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file1
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file2
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file3
+-rw-r--r--. 1 root    root      0 Nov  1 11:48 file4
+drwx------. 3 vagrant vagrant 113 Nov  1 12:02 [0m[01;34mvagrant[0m
+[root@otuslinux home]# cd ..
+[root@otuslinux /]# umount /home
+umount: /home: target is busy.
+        (In some cases useful info about processes that use
+         the device is found by lsof(8) or fuser(1))
+[root@otuslinux /]# cd ..
+[root@otuslinux /]# cd ..umount /home
+umount: /home: target is busy.
+        (In some cases useful info about processes that use
+         the device is found by lsof(8) or fuser(1))
+[root@otuslinux /]# exit
+exit
+
+Script done on Thu 01 Nov 2018 12:13:17 PM UTC
+Script started on Thu 01 Nov 2018 12:14:18 PM UTC
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# umpunt [K[K[K[K[Kount /home
+[root@otuslinux /]# lvconvert --merge /dev/VolGroup00/home_snap 
+  Merging of volume VolGroup00/home_snap started.
+  VolGroup00/LogVol_Home: Merged: 100.00%
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# ls /home
+[root@otuslinux /]# mount /home
+[root@otuslinux /]# mount /home[3Pls[C[C[C[C[C[C\
+> 
+[root@otuslinux /]# ls /home\[K
+file1  file10  file11  file12  file13  file14  file15  file16  file17  file18  file19  file2  file20  file3  file4  file5  file6  file7  file8  file9  [0m[01;34mvagrant[0m
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# exit
+exit
+
+Script done on Thu 01 Nov 2018 12:15:35 PM UTC
+Script started on Thu 01 Nov 2018 12:22:07 PM UTC
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# clear
+[H[J[root@otuslinux /]# clear[1Pexitls /home\mount /home[3Pls[C[C[C[C[C[C[K[K[K[K[K[K[K[Klsmod zfs
+Usage: lsmod
+[root@otuslinux /]# lsmod zfs|zfs zfsgzfsezfsrzfs[1Pzfs[1Pzfsrzfsezfspzfs zfs
+[01;31m[Kzfs[m[K                  3564468  0 
+zunicode              331170  1 [01;31m[Kzfs[m[K
+zavl                   15236  1 [01;31m[Kzfs[m[K
+icp                   270148  1 [01;31m[Kzfs[m[K
+zcommon                73440  1 [01;31m[Kzfs[m[K
+znvpair                89131  2 [01;31m[Kzfs[m[K,zcommon
+spl                   102412  4 icp,[01;31m[Kzfs[m[K,zcommon,znvpair
+[root@otuslinux /]# lsblk
+NAME                       MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                          8:0    0   40G  0 disk 
+├─sda1                       8:1    0    1M  0 part 
+├─sda2                       8:2    0    1G  0 part /boot
+└─sda3                       8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00    253:0    0    8G  0 lvm  /
+  ├─VolGroup00-LogVol01    253:1    0  1.5G  0 lvm  [SWAP]
+  └─VolGroup00-LogVol_Home 253:7    0    2G  0 lvm  /home
+sdb                          8:16   0   10G  0 disk 
+sdc                          8:32   0    2G  0 disk 
+├─vg_var-lv_var_rmeta_0    253:2    0    4M  0 lvm  
+│ └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_0   253:3    0  952M  0 lvm  
+  └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+sdd                          8:48   0    1G  0 disk 
+├─vg_var-lv_var_rmeta_1    253:4    0    4M  0 lvm  
+│ └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_1   253:5    0  952M  0 lvm  
+  └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+sde                          8:64   0    1G  0 disk 
+sdf                          8:80   0   10G  0 disk 
+sdg                          8:96   0    5G  0 disk 
+sdh                          8:112  0    5G  0 disk 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# zfs list
+no datasets available
+[root@otuslinux /]# 
+[root@otuslinux /]# zpool crear[Kte opt_pool mirroor[K[Kr dev.sdb /dev/sdf
+cannot open 'dev.sdb': no such device in /dev
+must be a full path or shorthand device name
+[root@otuslinux /]# zpool create opt_pool mirror dev.sdb /dev/sdf[1@/[C[C[C[C[1P[1@/
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# zfs list
+NAME       USED  AVAIL  REFER  MOUNTPOINT
+opt_pool    81K  9.63G    24K  /opt_pool
+[root@otuslinux /]# zpool status
+  pool: opt_pool
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	opt_pool    ONLINE       0     0     0
+	  mirror-0  ONLINE       0     0     0
+	    sdb     ONLINE       0     0     0
+	    sdf     ONLINE       0     0     0
+
+errors: No known data errors
+[root@otuslinux /]# lsblk
+NAME                       MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                          8:0    0   40G  0 disk 
+├─sda1                       8:1    0    1M  0 part 
+├─sda2                       8:2    0    1G  0 part /boot
+└─sda3                       8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00    253:0    0    8G  0 lvm  /
+  ├─VolGroup00-LogVol01    253:1    0  1.5G  0 lvm  [SWAP]
+  └─VolGroup00-LogVol_Home 253:7    0    2G  0 lvm  /home
+sdb                          8:16   0   10G  0 disk 
+├─sdb1                       8:17   0   10G  0 part 
+└─sdb9                       8:25   0    8M  0 part 
+sdc                          8:32   0    2G  0 disk 
+├─vg_var-lv_var_rmeta_0    253:2    0    4M  0 lvm  
+│ └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_0   253:3    0  952M  0 lvm  
+  └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+sdd                          8:48   0    1G  0 disk 
+├─vg_var-lv_var_rmeta_1    253:4    0    4M  0 lvm  
+│ └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_1   253:5    0  952M  0 lvm  
+  └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+sde                          8:64   0    1G  0 disk 
+sdf                          8:80   0   10G  0 disk 
+├─sdf1                       8:81   0   10G  0 part 
+└─sdf9                       8:89   0    8M  0 part 
+sdg                          8:96   0    5G  0 disk 
+sdh                          8:112  0    5G  0 disk 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# zpool add opt_pool /dev/sdg
+invalid vdev specification
+use '-f' to override the following errors:
+mismatched replication level: pool uses mirror and new vdev is disk
+[root@otuslinux /]# zpool add opt_pool /dev/sdg -f
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# zpool add opt_pool /dev/sdg -f[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clsblk[Kzpool status
+  pool: opt_pool
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	opt_pool    ONLINE       0     0     0
+	  mirror-0  ONLINE       0     0     0
+	    sdb     ONLINE       0     0     0
+	    sdf     ONLINE       0     0     0
+	  sdg       ONLINE       0     0     0
+
+errors: No known data errors
+[root@otuslinux /]# zpool remove opt_pool /dev/sdg
+cannot remove /dev/sdg: only inactive hot spares, cache, or log devices can be removed
+[root@otuslinux /]# zpool remove opt_pool /dev/sdg -f
+cannot remove /dev/sdg: only inactive hot spares, cache, or log devices can be removed
+cannot remove -f: no such device in pool
+[root@otuslinux /]# zpool destroy opt_pool
+[root@otuslinux /]# 
+[root@otuslinux /]# zpool status
+no pools available
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# zpool create opt_pool mirror /dev/sdb /dev/sdf
+[root@otuslinux /]# zpool status
+  pool: opt_pool
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	opt_pool    ONLINE       0     0     0
+	  mirror-0  ONLINE       0     0     0
+	    sdb     ONLINE       0     0     0
+	    sdf     ONLINE       0     0     0
+
+errors: No known data errors
+[root@otuslinux /]# zpool statuscreate opt_pool mirror /dev/sdb /dev/sdf[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kadd opt_pool log /dev/sdg
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# lsblk
+NAME                       MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                          8:0    0   40G  0 disk 
+├─sda1                       8:1    0    1M  0 part 
+├─sda2                       8:2    0    1G  0 part /boot
+└─sda3                       8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00    253:0    0    8G  0 lvm  /
+  ├─VolGroup00-LogVol01    253:1    0  1.5G  0 lvm  [SWAP]
+  └─VolGroup00-LogVol_Home 253:7    0    2G  0 lvm  /home
+sdb                          8:16   0   10G  0 disk 
+├─sdb1                       8:17   0   10G  0 part 
+└─sdb9                       8:25   0    8M  0 part 
+sdc                          8:32   0    2G  0 disk 
+├─vg_var-lv_var_rmeta_0    253:2    0    4M  0 lvm  
+│ └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_0   253:3    0  952M  0 lvm  
+  └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+sdd                          8:48   0    1G  0 disk 
+├─vg_var-lv_var_rmeta_1    253:4    0    4M  0 lvm  
+│ └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_1   253:5    0  952M  0 lvm  
+  └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+sde                          8:64   0    1G  0 disk 
+sdf                          8:80   0   10G  0 disk 
+├─sdf1                       8:81   0   10G  0 part 
+└─sdf9                       8:89   0    8M  0 part 
+sdg                          8:96   0    5G  0 disk 
+├─sdg1                       8:97   0    5G  0 part 
+└─sdg9                       8:105  0    8M  0 part 
+sdh                          8:112  0    5G  0 disk 
+[root@otuslinux /]# zpool status
+  pool: opt_pool
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	opt_pool    ONLINE       0     0     0
+	  mirror-0  ONLINE       0     0     0
+	    sdb     ONLINE       0     0     0
+	    sdf     ONLINE       0     0     0
+	logs
+	  sdg       ONLINE       0     0     0
+
+errors: No known data errors
+[root@otuslinux /]# zpool status[7Plsblkzpool add opt_pool log /dev/sdg[1P /dev/sdg[1P /dev/sdg[1P /dev/sdgc /dev/sdga /dev/sdgc /dev/sdgh /dev/sdge /dev/sdg[C[C[C[C[C[C[C[C[C[Kh
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# zpool add opt_pool cache /dev/sdhstatus[K
+  pool: opt_pool
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	opt_pool    ONLINE       0     0     0
+	  mirror-0  ONLINE       0     0     0
+	    sdb     ONLINE       0     0     0
+	    sdf     ONLINE       0     0     0
+	logs
+	  sdg       ONLINE       0     0     0
+	cache
+	  sdh       ONLINE       0     0     0
+
+errors: No known data errors
+[root@otuslinux /]# clear
+[H[J[root@otuslinux /]# df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-LogVol00     8.0G  707M  7.4G   9% /
+devtmpfs                             82M     0   82M   0% /dev
+tmpfs                                90M     0   90M   0% /dev/shm
+tmpfs                                90M  4.5M   86M   5% /run
+tmpfs                                90M     0   90M   0% /sys/fs/cgroup
+/dev/mapper/vg_var-lv_var           922M  136M  722M  16% /var
+/dev/sda2                          1014M   61M  954M   6% /boot
+/dev/mapper/VolGroup00-LogVol_Home  2.0G   33M  2.0G   2% /home
+opt_pool                            9.7G     0  9.7G   0% /opt_pool
+[root@otuslinux /]# ls /mnt
+[root@otuslinux /]# mount opt_pool /mnt/
+mount:  /opt_pool is not a block device
+[root@otuslinux /]# zfs create opt_pool/opt
+[root@otuslinux /]# zfs create opt_pool/opt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmount opt_pool /mnt/[13Pls /mnt[2Pdf -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-LogVol00     8.0G  707M  7.4G   9% /
+devtmpfs                             82M     0   82M   0% /dev
+tmpfs                                90M     0   90M   0% /dev/shm
+tmpfs                                90M  4.5M   86M   5% /run
+tmpfs                                90M     0   90M   0% /sys/fs/cgroup
+/dev/mapper/vg_var-lv_var           922M  136M  722M  16% /var
+/dev/sda2                          1014M   61M  954M   6% /boot
+/dev/mapper/VolGroup00-LogVol_Home  2.0G   33M  2.0G   2% /home
+opt_pool                            9.7G     0  9.7G   0% /opt_pool
+opt_pool/opt                        9.7G     0  9.7G   0% /opt_pool/opt
+[root@otuslinux /]# df -hzfs create opt_pool/opt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmount opt_pool /mnt/[C/ /mnt/o /mnt/p /mnt/t /mnt/
+mount:  /opt_pool/opt is not a block device
+[root@otuslinux /]# cp -aR /opt/* opt_pool/opt
+cp: cannot stat ‘/opt/*’: No such file or directory
+[root@otuslinux /]# ls -l
+total 77
+lrwxrwxrwx.   1 root    root        7 Nov  1 11:26 [0m[01;36mbin[0m -> [01;34musr/bin[0m
+dr-xr-xr-x.   5 root    root     4096 Nov  1 11:54 [01;34mboot[0m
+drwxr-xr-x.  19 root    root     3360 Nov  1 12:30 [01;34mdev[0m
+drwxr-xr-x.  78 root    root     8192 Nov  1 12:21 [01;34metc[0m
+drwxr-xr-x.   3 root    root      292 Nov  1 11:48 [01;34mhome[0m
+lrwxrwxrwx.   1 root    root        7 Nov  1 11:26 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx.   1 root    root        9 Nov  1 11:26 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxr-xr-x.   2 root    root        6 Apr 11  2018 [01;34mmedia[0m
+drwxr-xr-x.   2 root    root        6 Apr 11  2018 [01;34mmnt[0m
+drwxr-xr-x.   2 root    root        6 Apr 11  2018 [01;34mopt[0m
+drwxr-xr-x.   3 root    root        3 Nov  1 12:34 [01;34mopt_pool[0m
+dr-xr-xr-x. 250 root    root        0 Nov  1 12:04 [01;34mproc[0m
+dr-xr-x---.   4 root    root      184 Nov  1 12:19 [01;34mroot[0m
+drwxr-xr-x.  24 root    root      660 Nov  1 12:28 [01;34mrun[0m
+lrwxrwxrwx.   1 root    root        8 Nov  1 11:26 [01;36msbin[0m -> [01;34musr/sbin[0m
+-rw-r--r--.   1 root    root    49201 Nov  1 12:35 script.log
+drwxr-xr-x.   2 root    root        6 Apr 11  2018 [01;34msrv[0m
+dr-xr-xr-x.  13 root    root        0 Nov  1 12:04 [01;34msys[0m
+drwxrwxrwt.   9 root    root     4096 Nov  1 12:21 [30;42mtmp[0m
+drwxr-xr-x.  13 root    root      155 May 12 18:50 [01;34musr[0m
+drwxr-xr-x.   2 vagrant vagrant    25 Oct 31 11:22 [01;34mvagrant[0m
+drwxr-xr-x.  19 root    root     4096 Nov  1 11:42 [01;34mvar[0m
+[root@otuslinux /]# 
+[root@otuslinux /]# 
+[root@otuslinux /]# ls -lcp -aR /opt/* opt_pool/opt[C[C[C[C[C[C[C[C[C/opt_pool/opt
+cp: cannot stat ‘/opt/*’: No such file or directory
+[root@otuslinux /]# cd /opt
+[root@otuslinux opt]# ls -l
+total 0
+[root@otuslinux opt]# mount [K[K[K[K[K[Kzfs set mountpoint=/opt opt_pool/opt
+[root@otuslinux opt]# lsblk
+NAME                       MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                          8:0    0   40G  0 disk 
+├─sda1                       8:1    0    1M  0 part 
+├─sda2                       8:2    0    1G  0 part /boot
+└─sda3                       8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00    253:0    0    8G  0 lvm  /
+  ├─VolGroup00-LogVol01    253:1    0  1.5G  0 lvm  [SWAP]
+  └─VolGroup00-LogVol_Home 253:7    0    2G  0 lvm  /home
+sdb                          8:16   0   10G  0 disk 
+├─sdb1                       8:17   0   10G  0 part 
+└─sdb9                       8:25   0    8M  0 part 
+sdc                          8:32   0    2G  0 disk 
+├─vg_var-lv_var_rmeta_0    253:2    0    4M  0 lvm  
+│ └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_0   253:3    0  952M  0 lvm  
+  └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+sdd                          8:48   0    1G  0 disk 
+├─vg_var-lv_var_rmeta_1    253:4    0    4M  0 lvm  
+│ └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_1   253:5    0  952M  0 lvm  
+  └─vg_var-lv_var          253:6    0  952M  0 lvm  /var
+sde                          8:64   0    1G  0 disk 
+sdf                          8:80   0   10G  0 disk 
+├─sdf1                       8:81   0   10G  0 part 
+└─sdf9                       8:89   0    8M  0 part 
+sdg                          8:96   0    5G  0 disk 
+├─sdg1                       8:97   0    5G  0 part 
+└─sdg9                       8:105  0    8M  0 part 
+sdh                          8:112  0    5G  0 disk 
+├─sdh1                       8:113  0    5G  0 part 
+└─sdh9                       8:121  0    8M  0 part 
+[root@otuslinux opt]# zpoll status
+bash: zpoll: command not found
+[root@otuslinux opt]# zpoll status[1P status[1@o
+  pool: opt_pool
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	opt_pool    ONLINE       0     0     0
+	  mirror-0  ONLINE       0     0     0
+	    sdb     ONLINE       0     0     0
+	    sdf     ONLINE       0     0     0
+	logs
+	  sdg       ONLINE       0     0     0
+	cache
+	  sdh       ONLINE       0     0     0
+
+errors: No known data errors
+[root@otuslinux opt]# ls -l
+total 0
+[root@otuslinux opt]# cd ..
+[root@otuslinux /]# ls -l
+total 81
+lrwxrwxrwx.   1 root    root        7 Nov  1 11:26 [0m[01;36mbin[0m -> [01;34musr/bin[0m
+dr-xr-xr-x.   5 root    root     4096 Nov  1 11:54 [01;34mboot[0m
+drwxr-xr-x.  19 root    root     3360 Nov  1 12:30 [01;34mdev[0m
+drwxr-xr-x.  78 root    root     8192 Nov  1 12:21 [01;34metc[0m
+drwxr-xr-x.   3 root    root      292 Nov  1 11:48 [01;34mhome[0m
+lrwxrwxrwx.   1 root    root        7 Nov  1 11:26 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx.   1 root    root        9 Nov  1 11:26 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxr-xr-x.   2 root    root        6 Apr 11  2018 [01;34mmedia[0m
+drwxr-xr-x.   2 root    root        6 Apr 11  2018 [01;34mmnt[0m
+drwxr-xr-x.   2 root    root        2 Nov  1 12:34 [01;34mopt[0m
+drwxr-xr-x.   2 root    root        2 Nov  1 12:38 [01;34mopt_pool[0m
+dr-xr-xr-x. 256 root    root        0 Nov  1 12:04 [01;34mproc[0m
+dr-xr-x---.   4 root    root      184 Nov  1 12:19 [01;34mroot[0m
+drwxr-xr-x.  24 root    root      660 Nov  1 12:28 [01;34mrun[0m
+lrwxrwxrwx.   1 root    root        8 Nov  1 11:26 [01;36msbin[0m -> [01;34musr/sbin[0m
+-rw-r--r--.   1 root    root    53686 Nov  1 12:39 script.log
+drwxr-xr-x.   2 root    root        6 Apr 11  2018 [01;34msrv[0m
+dr-xr-xr-x.  13 root    root        0 Nov  1 12:04 [01;34msys[0m
+drwxrwxrwt.   9 root    root     4096 Nov  1 12:21 [30;42mtmp[0m
+drwxr-xr-x.  13 root    root      155 May 12 18:50 [01;34musr[0m
+drwxr-xr-x.   2 vagrant vagrant    25 Oct 31 11:22 [01;34mvagrant[0m
+drwxr-xr-x.  19 root    root     4096 Nov  1 11:42 [01;34mvar[0m
+[root@otuslinux /]# cd opt\[K
+[root@otuslinux opt]# ls -l
+total 0
+[root@otuslinux opt]# cd ..
+[root@otuslinux /]# cd /opt
+[root@otuslinux opt]# touch file{1..50}
+[root@otuslinux opt]# touch file{1..50}[10Pcd /opt
+[root@otuslinux opt]# cd /opttouch file{1..50}[10Pcd /opt[2P..ls -l
+total 25
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file1
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file10
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file11
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file12
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file13
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file14
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file15
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file16
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file17
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file18
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file19
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file2
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file20
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file21
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file22
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file23
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file24
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file25
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file26
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file27
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file28
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file29
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file3
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file30
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file31
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file32
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file33
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file34
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file35
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file36
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file37
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file38
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file39
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file4
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file40
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file41
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file42
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file43
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file44
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file45
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file46
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file47
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file48
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file49
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file5
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file50
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file6
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file7
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file8
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file9
+[root@otuslinux opt]# 
+[root@otuslinux opt]# 
+[root@otuslinux opt]# zfs snapshot opt_pool/opt@11-2018
+[root@otuslinux opt]# zfs list -t snapshot
+NAME                   USED  AVAIL  REFER  MOUNTPOINT
+opt_pool/opt@11-2018    14K      -    62K  -
+[root@otuslinux opt]# ls -l
+total 25
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file1
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file10
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file11
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file12
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file13
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file14
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file15
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file16
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file17
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file18
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file19
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file2
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file20
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file21
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file22
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file23
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file24
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file25
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file26
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file27
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file28
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file29
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file3
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file30
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file31
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file32
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file33
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file34
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file35
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file36
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file37
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file38
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file39
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file4
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file40
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file41
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file42
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file43
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file44
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file45
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file46
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file47
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file48
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file49
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file5
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file50
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file6
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file7
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file8
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file9
+[root@otuslinux opt]# rm -rf file{6..50}
+[root@otuslinux opt]# ls -l
+total 3
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file1
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file2
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file3
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file4
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file5
+[root@otuslinux opt]# ls
+file1  file2  file3  file4  file5
+[root@otuslinux opt]# cd ..
+[root@otuslinux /]# ls
+[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mopt_pool[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  script.log  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvagrant[0m  [01;34mvar[0m
+[root@otuslinux /]# cd opt
+[root@otuslinux opt]# ls
+file1  file2  file3  file4  file5
+[root@otuslinux opt]# cd ..
+[root@otuslinux /]# cd opt_pool
+[root@otuslinux opt_pool]# ls
+[root@otuslinux opt_pool]# lscd opt_pool/opt_pool[C[C[C[C[C[C[C[C/opt
+bash: cd: /opt_pool/opt: No such file or directory
+[root@otuslinux opt_pool]# cd /opt
+[root@otuslinux opt]# ls
+file1  file2  file3  file4  file5
+[root@otuslinux opt]# cd .zfs
+[root@otuslinux .zfs]# ls
+[0m[34;42mshares[0m  [34;42msnapshot[0m
+[root@otuslinux .zfs]# cat shares
+cat: shares: Is a directory
+[root@otuslinux .zfs]# cd shares
+[root@otuslinux shares]# cd shares[K[K[K[K[K[K[K[K[Kls
+[root@otuslinux shares]# cd ..
+[root@otuslinux .zfs]# cd snapshot/
+[root@otuslinux snapshot]# ls
+[0m[34;42m11-2018[0m
+[root@otuslinux snapshot]# cd 11-2018/
+[root@otuslinux 11-2018]# ls
+file1   file12  file15  file18  file20  file23  file26  file29  file31  file34  file37  file4   file42  file45  file48  file50  file8
+file10  file13  file16  file19  file21  file24  file27  file3   file32  file35  file38  file40  file43  file46  file49  file6   file9
+file11  file14  file17  file2   file22  file25  file28  file30  file33  file36  file39  file41  file44  file47  file5   file7
+[root@otuslinux 11-2018]# cd /opt
+[root@otuslinux opt]# ls
+file1  file2  file3  file4  file5
+[root@otuslinux opt]# cd .zfs
+[root@otuslinux .zfs]# cd snapshot/11-2018/
+[root@otuslinux 11-2018]# ls
+file1   file12  file15  file18  file20  file23  file26  file29  file31  file34  file37  file4   file42  file45  file48  file50  file8
+file10  file13  file16  file19  file21  file24  file27  file3   file32  file35  file38  file40  file43  file46  file49  file6   file9
+file11  file14  file17  file2   file22  file25  file28  file30  file33  file36  file39  file41  file44  file47  file5   file7
+[root@otuslinux 11-2018]# cp -a file{6..50} /opt
+[root@otuslinux 11-2018]# cd /opt
+[root@otuslinux opt]# ls -l
+total 25
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file1
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file10
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file11
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file12
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file13
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file14
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file15
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file16
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file17
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file18
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file19
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file2
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file20
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file21
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file22
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file23
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file24
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file25
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file26
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file27
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file28
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file29
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file3
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file30
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file31
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file32
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file33
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file34
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file35
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file36
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file37
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file38
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file39
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file4
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file40
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file41
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file42
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file43
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file44
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file45
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file46
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file47
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file48
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file49
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file5
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file50
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file6
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file7
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file8
+-rw-r--r--. 1 root root 0 Nov  1 12:40 file9
+[root@otuslinux opt]# exit
+exit
+
+Script done on Thu 01 Nov 2018 12:56:39 PM UTC
